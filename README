@@ -1,5 +1,11 @@
 Simple Dice Roller application to show CofC's students how to build Titanium applications.
 
+Version 1.0:
+-Allowed to roll dice to get random numbers
+
+Version 1.1:
+-Sound plays during rolls
+-Shake rolls a D20
 
 
 ----------------------------------

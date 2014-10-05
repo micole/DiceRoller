@@ -3,12 +3,12 @@
 		<View height="100%" width="100%" layout="vertical">
 			
 			<View id="DiceShower" height="50%">
-				<View id="CurrentDieView" backgroundColor="grey" width="50%" left="0">
-					<Label color="white" id="CurrentDie"></Label>
+				<View id="CurrentDieView" width="50%" left="0">
+					<Label id="CurrentDie"></Label>
 				</View>
-				<TableView id="PreviousDice" backgroundColor="black" width="50%" right="0"></TableView>
+				<TableView id="PreviousDice" width="50%" right="0"></TableView>
 			</View>
-			<View id="DicePicker" backgroundColor="grey" height="50%" layout="vertical">
+			<View id="DicePicker" height="50%" layout="vertical">
 				<View id="TopDie" layout="horizontal" horizontalWrap="true">
 					<Button onClick="d2">D2</Button>
 					<Button onClick="d4">D4</Button>

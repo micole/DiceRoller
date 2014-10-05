@@ -15,5 +15,26 @@
 
 "Button": {
 	width: "33%",
-	height: "33%"
+	height: "33%",
+	borderColor: "black",
+	backgroundColor: "#C4C4C9",
+	borderRadius: 10
 }
+
+"#CurrentDieView": {
+	backgroundColor: "#C4C4C9"
+}
+
+"#CurrentDie": {
+	color: "white"
+}
+
+"#PreviousDice": {
+	backgroundColor: "black"
+}
+
+"#DicePicker": {
+	backgroundColor: "#C4C4C9"
+}
+
+

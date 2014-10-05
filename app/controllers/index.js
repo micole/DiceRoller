@@ -28,9 +28,10 @@ $.index.open();
 function rollDie(d){
 	die = getRandomInt(1, d + 1);
 	$.CurrentDie.text = "D" + d + ": " + die;
-	//alert("D" + d + " rolled: " + die);
+	DiceRoll.play();
 	var row = Titanium.UI.createTableViewRow({
-    	title: 'D' + d + ': ' + die
+    	title: 'D' + d + ': ' + die,
+    	color: "white"
     	/* other properties */
 	});
 	if($.PreviousDice.data < 1){
@@ -42,12 +43,17 @@ function rollDie(d){
 	if($.PreviousDice.data > 15){
 		$.PreviousDice.deleteRow(15);
 	}
-	
-	//$.PreviousDice.appendRow(row)
-	
 }
 
 //min inclusive, max exclusive
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
+
+//Shake for D20, iPhone demo
+Ti.Gesture.addEventListener('shake', function(e) {
+	rollDie(20);
+});
+
+//Play sounds (can't get my iOS simulator to play sound')
+var DiceRoll = Ti.Media.createSound({url:"../../dice.wav"});
